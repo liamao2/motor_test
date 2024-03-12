@@ -1,0 +1,129 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=585FJ-UD93R-2ZTW4-F3VGU-GY9SY-5VVVJ
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.32.12.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\project\18.ins_task_gmibal01\MDK-ARM\ins_task.uvprojx
+Project File Date:  12/07/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'ins_task'
+compiling bsp_can.c...
+..\bsp_can\bsp_can.c(171): error:  #167: argument of type "__packed uint32_t *" is incompatible with parameter of type "void *restrict"
+          memcpy(&RxCAN_info_type_0.MCU_id,rx_data,8);//获取MCU标识符
+..\bsp_can\bsp_can.c(179): warning:  #188-D: enumerated type mixed with another type
+          MI_Motor[RxCAN_info_type_2.motor_id].motor_mode_state = RxCAN_info_type_2.mode_state;
+..\bsp_can\bsp_can.c(184): error:  #167: argument of type "__packed uint16_t *" is incompatible with parameter of type "void *restrict"
+          memcpy(&RxCAN_info_type_17.index,&rx_data[0],2);//获取查找的参数索引码
+..\bsp_can\bsp_can.c(185): error:  #167: argument of type "__packed float *" is incompatible with parameter of type "void *restrict"
+          memcpy(&RxCAN_info_type_17.param,&rx_data[4],4);//获取查找的参数信息
+..\bsp_can\bsp_can.c: 1 warning, 3 errors
+compiling MI_motor_drive.c...
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(781): error:  #20: identifier "namespace" is undefined
+  _RWSTD_NAMESPACE_BEGIN (__rw)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(781): error:  #65: expected a ";"
+  _RWSTD_NAMESPACE_BEGIN (__rw)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(93): error:  #20: identifier "namespace" is undefined
+  _RWSTD_NAMESPACE_BEGIN (std)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(93): error:  #65: expected a ";"
+  _RWSTD_NAMESPACE_BEGIN (std)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(117): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(122): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(127): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(131): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(136): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(141): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(146): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(150): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(154): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(158): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(162): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(167): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(171): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(175): error:  #65: expected a ";"
+  template<class _CharT,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(183): error:  #65: expected a ";"
+  typedef basic_ios<char>                                    ios;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(184): error:  #65: expected a ";"
+  typedef basic_streambuf<char>                              streambuf;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(185): error:  #65: expected a ";"
+  typedef basic_istream<char>                                istream;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(186): error:  #65: expected a ";"
+  typedef basic_ostream<char>                                ostream;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(187): error:  #65: expected a ";"
+  typedef basic_stringbuf<char>                              stringbuf;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(188): error:  #65: expected a ";"
+  typedef basic_istringstream<char>                          istringstream;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(189): error:  #65: expected a ";"
+  typedef basic_ostringstream<char>                          ostringstream;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(190): error:  #65: expected a ";"
+  typedef basic_filebuf<char>                                filebuf;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(191): error:  #65: expected a ";"
+  typedef basic_ifstream<char>                               ifstream;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(192): error:  #65: expected a ";"
+  typedef basic_ofstream<char>                               ofstream;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(193): error:  #65: expected a ";"
+  typedef basic_fstream<char>                                fstream;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(194): error:  #65: expected a ";"
+  typedef basic_iostream<char>                               iostream;
+..\MI_motor_drive\MI_motor_drive.c: 0 warnings, 30 errors
+"ins_task\ins_task.axf" - 33 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_ins_task
+  C:\Users\27299\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\27299\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
